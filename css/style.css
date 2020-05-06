@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+ul,
+li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 1170px; /* фиксируем ширину, чтобы убрать прокрутку снизу */
+    margin: 0 auto; /* центрируем */
+    padding: 0 15px; /* чтоб не прилипал к стенкам */
+}
+
+body{
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'PT Serif', serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #5e5e5e;
+}
+header{
+    font-family: 'Roboto', sans-serif;
+}
+.header__top{
+    background-color: #303030;
+}
+.header__btn{
+    float: right;
+    line-height: 36px;
+    color: #1b1b1b;
+    background-color: #ffc222;
+    padding: 5px 20px 4px 50px;
+    font-size: 16px;
+    display: block;
+    position: relative; /* выравниваем кейс по центру */
+}
+.header__btn:before{
+    content: "\f0b1"; /* лепим пиктограммы из шрифта */
+    font-family: 'icomoon';
+    position: absolute; /* выравниваем трубку по центру */
+    left: 22px;
+    color: #1b1b1b;
+}
+.header__contacts:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.header__phone,
+.header__email{
+    color: #cbcacb;
+    letter-spacing: 0.25px;
+    line-height: 45px;
+    position: relative; /* выравниваем трубку по центру */
+}
+.header__phone{
+    padding-left: 20px;
+    padding-right: 30px;
+}
+.header__phone:before{
+    content: "\f095"; /* лепим пиктограммы из шрифта */
+    font-family: 'icomoon';
+    position: absolute; /* выравниваем трубку по центру */
+    left: 0;
+    color: #ffc222;
+}
+.header__email{
+    padding-left: 24px;
+}
+.header__email:before{
+    content: "\f003"; /* лепим пиктограммы из шрифта */
+    font-family: 'icomoon';
+    position: absolute; /* выравниваем трубку по центру */
+    left: 0;
+    color: #ffc222;
+}
+.header__content{
+    padding: 34px 0px 23px;
+}
+.header__content-inner{
+    display: flex;  /* вытягиваем лого и меню в одну линию */
+    justify-content: space-between; /* вытягиваем лого и меню в одну линию */
+}
+.menu li{
+    display: inline-block; /* делаем меню в строчку */
+}
+.menu a{
+    color: #323232;
+    font-size: 16px;
+    line-height: 36px;
+    border: 1px solid transparent; /* окантовка активного пункта (пока прозрачная) */
+    padding: 0px 16px; /* отступ внутри окантовки */
+    transition: all .3s; /* делаем задержку появления окантовки */
+}
+.menu a:hover{
+    border-color: #ffc222; /* закрашиваем окантовку при наведении */
+}
+.menu li + li{
+    padding-left: 10px; /* отступ между окантовками меню */
+}
