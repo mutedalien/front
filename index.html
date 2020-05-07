@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -20,13 +21,15 @@
                 <div class="header__contacts">
                     <a class="header__phone" href="tel:380963092145">+38 (096) 309 21 45</a>
                     <a class="header__email" href="#">layout585@gmail.com</a>
-                    <a class="header__btn" href="">Бесплатная консультация</a>
+                    <a data-fancybox data-src="#modal" href="javascript:;" class="header__btn" href="#">Бесплатная
+                        консультация</a>
                 </div>
             </div>
         </div>
         <div class="header__content">
             <div class="container">
-                <div class="header__content-inner"> <!-- оболочка -->
+                <div class="header__content-inner">
+                    <!-- оболочка -->
                     <div class="header__logo">
                         <a href="#">
                             <img src="img/logo.png" alt="">
@@ -44,10 +47,64 @@
             </div>
         </div>
     </header>
+    <section class="slider">
+        <div class="container">
+            <div class="slider__inner">
+                <div class="slider__item">
+                    <div class="slider__item-content">
+                        <div class="slider__title">
+                            КОМПЛЕКСНОЕ ЗАКРЫТИЕ ПРЕДПРИЯТИЯ
+                        </div>
+                        <div class="slider__text">
+                            Полное прекращение существования юридического лица с сохранением легальности всей предыдущей
+                            деятельности.
+                        </div>
+                        <div data-fancybox data-src="#modal" href="javascript:;" class="slider__btn default-btn">
+                            Оставить заявку
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <div class="slider__item-content">
+                        <div class="slider__title">
+                            КОМПЛЕКСНОЕ ЗАКРЫТИЕ ПРЕДПРИЯТИЯ
+                        </div>
+                        <div class="slider__text">
+                            Полное прекращение существования юридического лица с сохранением легальности всей предыдущей
+                            деятельности.
+                        </div>
+                        <div data-fancybox data-src="#modal" href="javascript:;" class="slider__btn default-btn">
+                            Оставить заявку
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <div class="slider__item-content">
+                        <div class="slider__title">
+                            КОМПЛЕКСНОЕ ЗАКРЫТИЕ ПРЕДПРИЯТИЯ
+                        </div>
+                        <div class="slider__text">
+                            Полное прекращение существования юридического лица с сохранением легальности всей предыдущей
+                            деятельности.
+                        </div>
+                        <div data-fancybox data-src="#modal" href="javascript:;" class="slider__btn default-btn">
+                            Оставить заявку
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <div style="display: none;" id="modal">
+        <!-- фенсибокс -->
+        <h2>Hello!</h2>
+        <p>You are awesome!</p>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!-- подключаем jQuaery -->
     <script src="js/jquery.fancybox.min.js"></script> <!-- подключаем fancybox -->
+    <script src="js/slick.min.js"></script> <!-- подключаем слайдер -->
     <script src="js/main.js"></script> <!-- подключаем свои скрипты -->
 </body>
 
