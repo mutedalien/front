@@ -312,3 +312,81 @@ header{
 .about__btn.default-btn:after{
     color: #000;
 }
+.form{
+    padding-top: 30px;
+}
+.form__inner{
+    padding-bottom: 40px;
+    background-image: url(../img/form-fon.png);
+    min-height: 460px;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+.form__box{
+    max-width: 850px;
+    padding-top: 45px;
+}
+.form__box-inner{
+    display: flex;
+    justify-content: space-between;
+}
+.form__box-left{
+    max-width: 260px;
+    width: 100%;
+}
+.form__box-right{
+    max-width: 555px;
+    width: 100%;
+}
+.form__box-inner label,
+.form__box-inner input,
+.form__box-inner textarea{
+    display: block;
+    width: 100%;
+}
+.form__box-inner label{
+    line-height: 36px;
+    color: #282828;
+    font-family: 'Roboto', sans-serif;
+}
+.form__box-inner input{
+    margin-bottom: 8px;
+    outline: none;
+    height: 40px;
+    border: 1px solid #e6e6e6;
+    padding: 0px 10px;
+}
+.form__box-inner select{
+    outline: none;
+    padding-left: 17px;
+}
+.form__box-inner .jq-selectbox.jqselect{ /* обрабатываем кнопку "тема вопроса" */
+    display: block;
+    width: 100%;
+}
+.form__box-inner .jq-selectbox__select{
+    height: 40px;
+    border: 1px solid #e6e6e6;
+    padding-left: 17px;
+}
+.form__box-inner .jq-selectbox__trigger-arrow:before{
+    content: "\f105";
+    font-family: 'icomoon';
+    position: absolute;
+    right: 17px;
+    top: 0;
+    transform: rotate(90deg);
+}
+.form__box-inner textarea{
+    outline: none;
+    border: 1px solid #e6e6e6;
+    padding: 10px;
+    height: 208px;
+    resize: none;
+    margin-bottom: 40px;
+}
+.form__box-inner button{
+    background-color: transparent;
+    color: #282828;
+    float: right;
+}
