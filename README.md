@@ -8,3 +8,6 @@ https://icomoon.io/
 
 fonts:
 https://fonts.google.com/
+
+video:
+https://youtu.be/Q2zxQNQGcU8
