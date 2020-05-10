@@ -595,9 +595,6 @@ header{
     padding-top: 10px;
     max-width: 630px;
 }
-.footer__map iframe{
-
-}
 .footer__title{
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
@@ -654,4 +651,25 @@ header{
     line-height: 24px;
     padding: 8px 0;
     font-weight: 400;
+}
+#modal{
+    width: 300px;
+}
+#modal input{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    height: 40px;
+    border: 1px solid #e6e6e6;
+    padding: 0px 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+#modal input[type="submit"]{
+    background-color: #ffc222;
+    border: none;
+}
+.header__btn-menu{
+    display: none;
+    font-size: 28px;
 }

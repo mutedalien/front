@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/jquery.formstyler.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 
 <body>
@@ -37,6 +38,9 @@
                         </a>
                     </div>
                     <nav class="menu">
+                        <div class="header__btn-menu">
+                            <span class="icon-bars"></span>
+                        </div>
                         <ul>
                             <li><a href="#">Главная</a></li>
                             <li><a href="#">О компании</a></li>
@@ -300,7 +304,7 @@
                     <div class="news__slider-inner">
                         <div class="news__slider-item">
                             <div class="news__slider-title">
-                                Банкротство и ликвидация предприятия в Украине
+                                Банкротство и ликвидация предприятия в России
                             </div>
                             <div class="news__slider-text">
                                 «На сегодняшний день, коллектив компании объединяет высокопрофессиональных экспертов
@@ -397,7 +401,8 @@
                         </ul>
                     </div>
                     <div class="footer__map">
-                        <iframe width="630" height="250" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18039.082471650774!2d42.01562695004638!3d55.58660445673512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ec58c1878c8e9%3A0x44b6e0b2d47075c8!2z0JzRg9GA0L7QvCwg0JLQu9Cw0LTQuNC80LjRgNGB0LrQsNGPINC-0LHQuy4sIDYwMjI1Ng!5e0!3m2!1sru!2sru!4v1589052629651!5m2!1sru!2sru"
+                        <iframe width="630" height="250"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18039.082471650774!2d42.01562695004638!3d55.58660445673512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ec58c1878c8e9%3A0x44b6e0b2d47075c8!2z0JzRg9GA0L7QvCwg0JLQu9Cw0LTQuNC80LjRgNGB0LrQsNGPINC-0LHQuy4sIDYwMjI1Ng!5e0!3m2!1sru!2sru!4v1589052629651!5m2!1sru!2sru"
                             frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
                             tabindex="0"></iframe>
                     </div>
@@ -412,11 +417,13 @@
             </div>
         </div>
     </footer>
-
-    <div style="display: none;" id="modal">
-        <!-- фенсибокс -->
-        <h2>Hello!</h2>
-        <p>You are awesome!</p>
+    <!-- фенсибокс -->
+    <div id="modal">
+        <form>
+            <input type="text" placeholder="Ваше имя">
+            <input type="text" placeholder="Ваш телефон">
+            <input type="submit" value="Отправить">
+        </form>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!-- подключаем jQuaery -->
